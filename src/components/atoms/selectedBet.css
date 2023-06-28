@@ -1,0 +1,21 @@
+.selected-bet-enter {
+    opacity: 0;
+    transform: scale(0.6);
+}
+
+.selected-bet-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+}
+
+.selected-bet-exit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.selected-bet-exit-active {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 500ms, transform 500ms;
+}

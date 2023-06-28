@@ -1,0 +1,82 @@
+/*.neutral-enter {
+    opacity: 0;
+  }
+  .neutral-enter-active {
+    opacity: 1;
+    transition: opacity 6s;
+  }
+  .neutral-exit {
+    opacity: 1;
+  }
+  .neutral-exit-active {
+    opacity: 0;
+    transition: opacity 6s;
+  }*/
+  /*
+  .up-enter {
+    color: inherit;
+    font-weight: inherit;
+  }
+  .up-enter-active {
+    color: green;
+    font-weight: 600;
+    transition: color font-weight 6s;
+
+  }
+  .up-exit {
+    color: green;
+    font-weight: 600;
+  }
+  .up-exit-active {
+    color: inherit;
+    font-weight: inherit;
+    transition: color font-weight 6s;
+  }
+  .down-enter {
+    color: inherit;
+    font-weight: inherit;
+  }
+  .down-enter-active {
+    color: red;
+    font-weight: 600;
+    transition: color font-weight 6s;
+  }
+  .down-exit {
+    color: red;
+    font-weight: 600;
+  }
+  .down-exit-active {
+    color: inherit;
+    font-weight: inherit;
+    transition: color font-weight 6s;
+  }
+  */
+  .up-enter {
+    color: inherit;
+  }
+  .up-enter-active {
+    color: green;
+    transition: color 6s;
+
+  }
+  .up-exit {
+    color: green;
+  }
+  .up-exit-active {
+    color: inherit;
+    transition: color 6s;
+  }
+  .down-enter {
+    color: inherit;
+  }
+  .down-enter-active {
+    color: red;
+    transition: color 6s;
+  }
+  .down-exit {
+    color: red;
+  }
+  .down-exit-active {
+    color: inherit;
+    transition: color 6s;
+  }

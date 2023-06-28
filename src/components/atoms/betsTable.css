@@ -1,0 +1,19 @@
+#tableId {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.6rem;
+
+}
+#tableId > tr {
+    font-weight: 600;
+}
+#tableId>tr,
+#tableId>td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    width: 10px;
+    vertical-align: baseline;
+    text-align: center;
+}

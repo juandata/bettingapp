@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "ArchivoBlack";
+  src: local("ArchivoBlack"),
+    url("./styles/fonts/Archivo_Black/ArchivoBlack-Regular.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SaralaBold";
+  src: local("SaralaBold"),
+    url('./styles/fonts/Sarala/Sarala-Bold.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SaralaRegular";
+  src: local("SaralaRegular"),
+    url('./styles/fonts/Sarala/Sarala-Regular.ttf') format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "SigmarRegular";
+  src: local("SigmarRegular"),
+    url('./styles/fonts/Sigmar/Sigmar-Regular.ttf') format("truetype");
+  font-weight: bold;
+}
+
+.font-face-ArchivoBlack {
+  font-family: "ArchivoBlack" !important;
+}
+
+.font-face-SaralaBold {
+  font-family: "SaralaBold" !important;
+}
+
+.font-face-SaralaRegular {
+  font-family: "SaralaRegular" !important;
+}
+
+.font-face-SigmarRegular {
+  font-family: "SigmarRegular" !important;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

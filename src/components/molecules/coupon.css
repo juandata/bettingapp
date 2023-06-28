@@ -1,0 +1,7 @@
+.MuiFormLabel-root.Mui-focused {
+    color: #4DD21D !important;
+}
+
+.MuiInput-underline:after {
+    border-bottom: 2px solid #4DD21D !important;
+}

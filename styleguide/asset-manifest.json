@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/build/bundle.60606766.js",
+    "Column.md": "/2a47afbb513cdd26b019.md",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "build/bundle.60606766.js"
+  ]
+}
