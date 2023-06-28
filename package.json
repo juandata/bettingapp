@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "author": "Juan David Tabares Arce",
+  "engines": {
+    "node": "v16.14.2"
+  },
   "resolutions": {
     "**/@emotion/styled": "^11.6.0"
   },
