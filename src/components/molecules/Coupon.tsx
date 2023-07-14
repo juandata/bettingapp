@@ -64,12 +64,12 @@ const Coupon = () => {
   };
 
   React.useEffect(() => {
-    if (codereData.events.length === 0) return;
+    if (codereData.LiveSport.length === 0) return;
     //For every bet in couponData check whether the bet is in the response otherwise delete it from the couponData
     for (const coupon in couponData) {
       const liveDetailDataKeys = Object.keys(liveDetailData);
       //"soccer"
-      const sportHandled = codereData.events.filter(
+      const sportHandled = codereData.LiveSport.filter(
         (events: { SportHandle: string }) => events.SportHandle === couponData[coupon].game.SportHandle
       );
 

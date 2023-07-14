@@ -10,7 +10,7 @@ import App from '../../App';
 import { reduceUserActions } from '../../store/userActionsSlice';
 
 import { userActions } from '../../store/initialState';
-const events = getHomeLiveEvents.events[0];
+const events = getHomeLiveEvents.LiveSport[0];
 //const events2 = getHomeLiveEvents2.events[0];
 /**Sample on how to use a mock context */
 

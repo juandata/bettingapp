@@ -58,6 +58,7 @@ const App = () => {
   useEffect(() => {
     if (useMockData === 'false') {
       socket.on('data', (data: ServerResponseType | DataServerResponse) => {
+        console.log('data from server is', data);
         if ('error' in data) {
           const userActionsCopy = { ...userActionsRef.current };
           if (data.error === 'xhr poll error') {
@@ -78,15 +79,17 @@ const App = () => {
           if (getHomeLiveRef.current !== 0) {
             //check if getHomeLiveEventsErrorCounter is not equal to 0, if so there was an error from response but the data recovered from server
             setGetHomeLiveEventsErrorCounter(0);
-            alert(
+            /* alert(
               'check if getHomeLiveEventsErrorCounter is not equal to 0, if so there was an error from response but the data recovered from server'
-            );
+            );*/
           }
+          //console.log('alert error dispatching data:', data);
           dispatch(reduceCodereData(data));
         }
       });
 
       socket.on('displayLiveDetail', (data: ServerResponseType | DataServerResponse) => {
+        debugger;
         if ('error' in data) {
           if (
             userActionsRef.current.lastLiveDetailId === data.room &&
@@ -104,8 +107,7 @@ const App = () => {
           if (userActionsRef.current.lastLiveDetailId === data.NodeId && liveDetailRef.current !== 0) {
             //check if liveDetailMarketErrorCounter is not equal to 0, if so there was an error from response but the data recovered from server
             setLiveDetailMarketErrorCounter(0);
-            console.log();
-            alert(
+            console.log(
               'check if liveDetailMarketErrorCounter is not equal to 0, if so there was an error from response but the data recovered from server'
             );
           }

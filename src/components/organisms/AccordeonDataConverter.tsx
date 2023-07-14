@@ -123,7 +123,7 @@ const AccordeonMaper = () => {
   const codereData = useSelector((state: { codereData: CodereDataProps }) => state.codereData);
   const [loading, setLoading] = useState(true);
   const theme = useTheme();
-  const codereDataKeys = Object.keys(codereData.events);
+  const codereDataKeys = Object.keys(codereData.LiveSport);
 
   const alertClick = () => {
     location.reload();
@@ -133,10 +133,13 @@ const AccordeonMaper = () => {
       setLoading(false);
     }
   }, [codereData]);
-
-  const accordeons = codereData.events.map((el: AccordeonDataConverterProps) => {
-    return <AccordeonMemo data={el} key={el.SportHandle} />;
-  });
+  const codereDataLiveSportKeys = Object.keys(codereData.LiveSport);
+  const accordeons =
+    codereDataLiveSportKeys.length >= 1
+      ? codereData.LiveSport.map((el: AccordeonDataConverterProps) => {
+          return <AccordeonMemo data={el} key={el.SportHandle} />;
+        })
+      : [];
 
   let alertWindow = null;
   let errorDiv = null;

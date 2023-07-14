@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import LiveScoreConverter from './LiveScoreConverter';
 import getHomeLiveEvents from '../../data/getHomeLiveEvents.json';
-const mockedEvent = getHomeLiveEvents.events[0].Events[0];
+const mockedEvent = getHomeLiveEvents.LiveSport[0].Events[0];
 describe('Converts the live score depending on the sport', () => {
   it('Should render the correct live score for the local participant of the event', () => {
     const resultHome = mockedEvent.liveData.ResultHome;

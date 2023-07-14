@@ -9,12 +9,12 @@ export const codereDataSlice = createSlice({
     reduceCodereData: (
       state: CodereDataProps,
       action: {
-        payload: { events: Array<AccordeonDataConverterProps>; liveEventsCount: number };
+        payload: { LiveSport: Array<AccordeonDataConverterProps>; LiveEventsCount: number };
         type: string;
       }
     ) => {
-      state.events = action.payload.events;
-      state.liveEventsCount = action.payload.liveEventsCount;
+      state.LiveSport = action.payload.LiveSport;
+      state.LiveEventsCount = action.payload.LiveEventsCount;
     },
   },
 });

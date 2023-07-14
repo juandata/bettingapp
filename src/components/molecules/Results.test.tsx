@@ -6,7 +6,7 @@ import { ThemeProvider } from '@emotion/react';
 import { Provider } from 'react-redux';
 import theme from '../../styles/theme';
 import {setupStore} from '../../store/store';
-const events = getHomeLiveEvents.events[0].Events;
+const events = getHomeLiveEvents.LiveSport[0].Events;
 
 describe('Renders the different markets of an event with titles and odds..', () => {
   it('Should render "no results available" when empty prop.', () => {
@@ -57,7 +57,7 @@ describe('Renders the different markets of an event with titles and odds..', () 
     expect(getByText('2')).toBeInTheDocument();
   });
   it('In Handicap markets it hould render the first part of the name and the handicap odds".', async () => {
-    const events = getHomeLiveEvents.events[2].Events;
+    const events = getHomeLiveEvents.LiveSport[2].Events;
     const results = events[2].Games[1].Results;
     const el = events[2].Games[1];
 

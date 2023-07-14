@@ -7,7 +7,7 @@ import { Provider } from 'react-redux';
 import theme from '../../styles/theme';
 import {setupStore} from '../../store/store';
 
-const events = getHomeLiveEvents.events[0].Events;
+const events = getHomeLiveEvents.LiveSport[0].Events;
 
 describe('Renders the button and odds of a specific market', () => {
   it('Should render the odds of a specific market .', () => {

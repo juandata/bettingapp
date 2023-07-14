@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import theme from '../../styles/theme';
 import {setupStore} from '../../store/store';
 import Results from './Results';
-const events = getHomeLiveEvents.events[0].Events;
+const events = getHomeLiveEvents.LiveSport[0].Events;
 
 describe('Renders the different markets of an event with titles and odds..', () => {
   it('Should render the title and the odds of an event.', () => {

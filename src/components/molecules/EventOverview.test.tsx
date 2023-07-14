@@ -10,8 +10,8 @@ import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from '@emotion/react';
 import theme from '../../styles/theme';
 import { setupStore } from '../../store/store';
-const mockedEvent = getHomeLiveEvents.events[0].Events[0];
-const mockedEvent2 = getHomeLiveEvents2.events[0].Events[0];
+const mockedEvent = getHomeLiveEvents.LiveSport[0].Events[0];
+const mockedEvent2 = getHomeLiveEvents2.LiveSport[0].Events[0];
 /**Sample on how to use a mock context */
 const renderProvider = (children: React.ReactNode) => {
   return render(<MockProvider>{children}</MockProvider>);

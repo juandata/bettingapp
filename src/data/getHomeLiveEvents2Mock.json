@@ -1,5 +1,5 @@
 {
-  "events": [
+  "LiveSport": [
     {
       "Events": [
         {
@@ -13503,5 +13503,5 @@
       "Locked": false
     }
   ],
-  "liveEventsCount": 8
+  "LiveEventsCount": 8
 }

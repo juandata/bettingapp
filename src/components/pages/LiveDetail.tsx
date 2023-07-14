@@ -25,6 +25,7 @@ interface KeyStringType {
  * Renders the LiveDetail view of the market specified in the nodeId
  */
 const LiveDetail = () => {
+  const doNotUseWidgets = false;
   const theme = useTheme();
   const minWidth1210 = useMediaQuery('(min-width:1210px)');
   const userActions = useSelector((state: { userActions: ActionTypes }) => state.userActions);
@@ -63,19 +64,21 @@ const LiveDetail = () => {
     }
 
     return () => {
-      /**
-       * TODO:Delete userActions.lastLiveDetailId when unmounted
-       */
-      const lmtPlusId = document.getElementById('lmtPlus');
-      const gameScoreboard = document.getElementById('scoreBoard');
-      if (lmtPlusId) {
-        document.body.removeChild(lmtPlusId);
-      }
-      if (gameScoreboard) {
-        document.body.removeChild(gameScoreboard);
-      }
-      if (isMounted.current) {
-        dispatch(reduceUserActions(userActionsInitialState));
+      if (!doNotUseWidgets) {
+        /**
+         * TODO:Delete userActions.lastLiveDetailId when unmounted
+         */
+        const lmtPlusId = document.getElementById('lmtPlus');
+        const gameScoreboard = document.getElementById('scoreBoard');
+        if (lmtPlusId) {
+          document.body.removeChild(lmtPlusId);
+        }
+        if (gameScoreboard) {
+          document.body.removeChild(gameScoreboard);
+        }
+        if (isMounted.current) {
+          dispatch(reduceUserActions(userActionsInitialState));
+        }
       }
     };
   }, []);
@@ -112,12 +115,14 @@ const LiveDetail = () => {
     if (Object.keys(categoryArray).length >= 1) {
       if (tab === '') {
         setTab(Object.keys(categoryArray)[0]);
-
+        if (doNotUseWidgets) {
+          setLiveHeader(true);
+          return;
+        }
         if (liveDetailData[userActions.lastLiveDetailId].StatisticsId.length === 0) {
           setLiveHeader(true);
           return;
         }
-
         const lmtPlusId = document.getElementById('lmtPlus');
         if (!lmtPlusId && liveDetailKeys.includes(userActions.lastLiveDetailId)) {
           const scriptlmtPlus = document.createElement('script');

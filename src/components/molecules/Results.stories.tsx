@@ -22,7 +22,7 @@ const Template: ComponentStory<typeof Results> = (args) => (
 export const Component = Template.bind({});
 
 Component.args = {
-  el: getHomeLiveEvents.events[3].Events[0].Games[2],
-  results: getHomeLiveEvents.events[3].Events[0].Games[2].Results,
-  name: getHomeLiveEvents.events[3].Events[0].Name,
+  el: getHomeLiveEvents.LiveSport[3].Events[0].Games[2],
+  results: getHomeLiveEvents.LiveSport[3].Events[0].Games[2].Results,
+  name: getHomeLiveEvents.LiveSport[3].Events[0].Name,
 };

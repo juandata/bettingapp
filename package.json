@@ -95,6 +95,7 @@
     "dev": "npm-run-all --p test storybook start",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test",
     "deploy": "npm run build && npm run prod",
     "prod": "npm run",
     "eject": "react-scripts eject",

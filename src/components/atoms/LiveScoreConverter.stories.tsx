@@ -20,5 +20,5 @@ const Template: ComponentStory<typeof LiveScoreConverter> = (args) => (
 );
 
 export const Component = Template.bind({});
-const sourceData = getHomeLiveEvents.events[1].Events[0];
+const sourceData = getHomeLiveEvents.LiveSport[1].Events[0];
 Component.args = { data: sourceData.liveData, result: sourceData.liveData.ResultHome, home: true };

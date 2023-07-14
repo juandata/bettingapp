@@ -5,7 +5,7 @@ import getHomeLiveEvents from '../../data/getHomeLiveEvents.json';
 import MockProvider from '../../integrationTests/Provider';
 //import { liveDetailState } from '../store/initialState';
 //import { userActionsState, userState } from '../store/mockedState';
-const events = getHomeLiveEvents.events[0].Events;
+const events = getHomeLiveEvents.LiveSport[0].Events;
 /*const couponState = {
   '6760114101': {
     game: {

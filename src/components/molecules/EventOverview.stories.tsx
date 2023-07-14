@@ -20,4 +20,4 @@ const Template: ComponentStory<typeof EventOverview> = (args) => (
 );
 
 export const Component = Template.bind({});
-Component.args = { data: getHomeLiveEvents.events[1].Events[0] };
+Component.args = { data: getHomeLiveEvents.LiveSport[1].Events[0] };

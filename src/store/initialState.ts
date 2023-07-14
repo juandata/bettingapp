@@ -18,8 +18,8 @@ export const userActions = {
   lastLiveDetailId: '',
 };
 export const codereDataState = {
-  events: [],
-  liveEventsCount: 0,
+  LiveSport: {},
+  LiveEventsCount: 0,
 };
 export const couponFooterState = {
   combined: true,

@@ -24,6 +24,6 @@ export const Component = Template.bind({});
 Component.args = {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
-  games: getHomeLiveEvents.events[6].Events[0].Games,
-  name: getHomeLiveEvents.events[6].Events[0].Name,
+  games: getHomeLiveEvents.LiveSport[6].Events[0].Games,
+  name: getHomeLiveEvents.LiveSport[6].Events[0].Name,
 };

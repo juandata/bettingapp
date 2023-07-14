@@ -23,4 +23,4 @@ const Template: ComponentStory<typeof AccordeonDataConverter> = (args) => {
 };
 
 export const Component = Template.bind({});
-Component.args = { data: getHomeLiveEvents.events[0] };
+Component.args = { data: getHomeLiveEvents.LiveSport[0] };

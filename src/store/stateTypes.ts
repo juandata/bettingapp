@@ -82,8 +82,8 @@ export type LiveDetailDataInterface = {
   [key: string]: EventsArrayProps;
 };
 export interface CodereDataProps {
-  events: Array<AccordeonDataConverterProps>;
-  liveEventsCount: number;
+  LiveSport: Array<AccordeonDataConverterProps>;
+  LiveEventsCount: number;
 }
 export interface StoreInterface {
   userData: UserInterface;
